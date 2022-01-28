@@ -1,0 +1,125 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  background-color: #0000;
+  background:black;
+  padding-bottom: 5px;
+  height: 40px;
+  width: 100%;
+  color: yellow;
+  border-bottom: 2px solid yellow;
+  margin-bottom: 60px;
+  padding-top: 10px;
+}
+
+nav h1 {
+  font-weight: bolder;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+nav .info {
+  display: flex;
+  align-items: center;
+}
+
+nav p {
+  margin: 0 15px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+nav .icons {
+    display: flex;
+    align-items:center;
+}
+
+nav .icons .cart{
+    position:relative;
+}
+
+.icons .cart span{
+    position:absolute;
+    height:16px;
+    width:16px;
+    color: black;
+    background:yellow;
+    text-align:center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    top: -14px;
+    left: 35px;
+}
+
+nav .icons i {
+  font-size: 20px !important;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+main{
+    margin: 50px 90px;
+}
+main h1 {
+    color: yellow;
+}
+
+
+/* products styling */
+
+
+.products-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+.products-div .product{
+    color:yellow;
+    width: 330px;
+    height:100%;
+    border: 1px solid yellow;
+    border-radius:6px;
+}
+
+.product-item img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+.product-info p{
+    padding:5px;
+}
+.product-button{
+    display: flex;
+    align-items: center;
+    padding:5px;
+}
+.product-button button{
+    height: 35px;
+    width: 100%;
+    margin:5px 10px;
+    background:yellow;
+    color:black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
